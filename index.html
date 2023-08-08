@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    *{
+      box-sizing:border-box;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin-top: 1%;
+    }
+      
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+
+
+    .frame{
+      background-color: rgb(220, 235, 250);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+      height: 100vh;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: azure;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      height: 450px;
+      max-width: 300px;
+      min-width: 300px;
+      border-radius: 5%;
+    }
+
+    .image img{
+      width: 50%;
+      border-radius:5%;
+      height: 90%;
+      width: 90%;
+      aspect-ratio: 1/1;
+      margin: 5%;
+    }
+
+    .container{
+      text-align: center;
+      margin: 0 10%;
+
+    }
+
+    .title{
+      font-weight: bold;
+      font-size:larger;
+    }
+
+    .description{
+      font-size:small;
+      color:rgb(124, 121, 118)
+    }
+
+  </style>
+</head>
+<body>
+<div class="frame">
+  <div class="card"> 
+      <div class="image">
+      <img src="./images/image-qr-code.png" alt="QR image">
+      </div>
+      <div class="container">
+        <p class="title">Improve your front-end skills by building projects</p>
+        <p class="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eric</a>.
+  </div>
+</div>
+
+
+  
+</body>
+</html>
